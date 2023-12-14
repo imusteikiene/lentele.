@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: plum;
+}
+
+th, td {
+  border: 1px solid purple;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: purple;
+}
+
+
+
+</style>
+<body>
+    <label for="searchInput">Filtruoti pagal vaardą ir pavardę:</label>
+    <input type="search" id="searchInput">
+
+
+    <input type="checkbox" id="vipCheckbox"> Rodo tik Vip
+    <h1>Lentele</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>City</th>
+            <th>fav_color</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <p id="loadingMessage">Loading data...</p>
+    <script  src="script.js"></script>
+    
+</body>
+</html>
